@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Button,
+  Dot,
+  GlobalStyles,
+  HeadingFour,
+  HeadingOne,
+  HeadingThree,
+  HeadingTwo,
+  Text,
+} from "./globalStyles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStyles />
+      <HeadingOne>This Syful Islam Bappi</HeadingOne>
+      <HeadingTwo>This Sufian Sadak</HeadingTwo>
+      <HeadingThree>This Sufian Sadak</HeadingThree>
+      <HeadingFour>This Sufian Sadak</HeadingFour>
+      <Button>Hello World!</Button>
+      <Text>Hello Bangladesh</Text>
+      <Dot>5</Dot>
     </div>
   );
 }
