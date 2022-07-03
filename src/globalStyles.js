@@ -145,6 +145,7 @@ export const Button = styled.button`
   outline: none;
   border: none;
   border-radius: calc(8rem / 16);
+  cursor: pointer;
 `;
 
 // Notification Dot Styles
@@ -160,4 +161,18 @@ export const Dot = styled.span`
   height: 32px;
   background-image: var(--blue-gradient);
   border-radius: 50%;
+  position: ${({ position }) => position || "static"};
+  top: ${({ top }) => top || ""};
+  left: ${({ left }) => left || ""};
+  right: ${({ right }) => right || ""};
+  bottom: ${({ bottom }) => bottom || ""};
+`;
+
+// Container Styles
+export const Container = styled.div`
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 `;
